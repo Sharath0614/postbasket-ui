@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, setTestabilityGetter } from '@angular/core';
 
 @Component({
   selector: 'app-post-create',
@@ -10,9 +10,12 @@ export class PostCreateComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('this is initialisation');
   };
 
-  onAddPost() {
-
+ onAddPost = ()  => {
+return '';
   };
 };
+
+
